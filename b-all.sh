@@ -1,7 +1,8 @@
 #!/bin/bash
 set -e
-"$MPATH/b-plat.sh" darwin
-"$MPATH/b-plat.sh" arm64-darwin
-"$MPATH/b-plat.sh" armv7-darwin
-"$MPATH/b-plat.sh" armv7-android
-"$MPATH/b-plat.sh" x86_64-darwin
+MPATH=`dirname $BASH_SOURCE`
+"$MPATH/b-plat.sh" darwin darwin
+"$MPATH/b-plat.sh" arm64-darwin arm64-ios
+"$MPATH/b-plat.sh" armv7-darwin ios
+"$MPATH/b-plat.sh" armv7-android armv7-android
+"$MPATH/b-plat.sh" x86_64-darwin darwin-64
