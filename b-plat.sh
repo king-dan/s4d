@@ -14,4 +14,5 @@ cp "$DYNAMO_HOME/bin/$P"/* "$ENGDROP"
 mkdir -p "$BOBLIBDROP"
 mkdir -p "./com.dynamo.cr/com.dynamo.cr.target/res/"
 cp "$DYNAMO_HOME/share/java/classes.dex" "$BOBLIBDROP" || : 
+cp "$DYNAMO_HOME/share/java/dlib.jar" "$BOBLIBDROP" || : 
 cp -r "$DYNAMO_HOME/ext/share/java/res"/* "./com.dynamo.cr/com.dynamo.cr.target/res/" || :
